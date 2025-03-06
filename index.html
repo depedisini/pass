@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Scoring System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Prioritizing Assignment Scoring System</h1>
+        
+        <form id="assignmentForm">
+            <input type="text" id="name" placeholder="Assignment Name" required>
+
+            <label for="deadline">Deadline:</label>
+            <select id="deadline">
+                <option value="" disabled selected>-- Select Deadline --</option>
+                <option value="4">Immediate (< 1 day left)</option>
+                <option value="3">Near (1 - 3 days left)</option>
+                <option value="2">Distant (4 - 7 days left)</option>
+                <option value="1">Distant (> 1 week left)</option>
+            </select>
+
+            <label for="assignmentType">Assignment Type:</label>
+            <select id="assignmentType">
+                <option value="" disabled selected>-- Select Type --</option>
+                <option value="4">Paper / Journal</option>
+                <option value="3">Essay</option>
+                <option value="2">Fill in the Blank</option>
+                <option value="1">Multiple Choice</option>
+            </select>
+
+            <label for="difficulty">Difficulty:</label>
+            <select id="difficulty">
+                <option value="" disabled selected>-- Select Difficulty --</option>
+                <option value="4">Very Difficult</option>
+                <option value="3">Difficult</option>
+                <option value="2">Moderate</option>
+                <option value="1">Easy</option>
+            </select>
+
+            <label for="impact">Impact:</label>
+            <select id="impact">
+                <option value="" disabled selected>-- Select Impact --</option>
+                <option value="3">Very Insightful</option>
+                <option value="2">Moderate Insight</option>
+                <option value="1">Just a Regular Assignment</option>
+            </select>
+
+            <button type="submit">➕ Add Assignment</button>
+        </form>
+
+        <h2>📋 Prioritized Assignments</h2>
+        <ul id="assignmentList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
