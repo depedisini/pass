@@ -1,4 +1,19 @@
-/* Dark Theme */
+.form-group {
+    display: flex;
+    align-items: center; /* Aligns label and input vertically */
+    justify-content: space-between; /* Spaces label and input */
+    margin-bottom: 15px;
+}
+
+label {
+    width: 30%; /* Adjust width to align all labels */
+    text-align: left; /* Align label text to the left */
+    color: #f0f0f0;
+    font-weight: bold;
+}
+
+
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -121,5 +136,27 @@ li:hover {
     background: darkred;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #252525;
+    color: white;
+}
+
+th, td {
+    border: 1px solid #444;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: #087099;
+    color: white;
+}
+
+tr:hover {
+    background: #333;
+}
 
 
