@@ -11,7 +11,8 @@
         <h1>Prioritizing Assignment Scoring System</h1>
         
         <form id="assignmentForm">
-            <input type="text" id="name" placeholder="Assignment Name" required>
+            <label for="name">Assignment Name:</label>
+            <input type="text" id="name" placeholder="(e.g Calculus Assignment )" required>
 
             <label for="deadline">Deadline:</label>
             <select id="deadline">
@@ -43,16 +44,27 @@
             <label for="impact">Impact:</label>
             <select id="impact">
                 <option value="" disabled selected>-- Select Impact --</option>
-                <option value="3">Very Insightful</option>
-                <option value="2">Moderate Insight</option>
+                <option value="4">Very Insightful</option>
+                <option value="3">Insightful</option>
+                <option value="2">Learn something new</option>
                 <option value="1">Just a Regular Assignment</option>
             </select>
 
-            <button type="submit">➕ Add Assignment</button>
+            <button type="submit">➕ Enter Assignment</button>
         </form>
 
-        <h2>📋 Prioritized Assignments</h2>
-        <ul id="assignmentList"></ul>
+        <h2>📜 Your Assignment :</h2>
+        <table id="assignmentTable">
+            <thead>
+                <tr>
+                    <th>Assignment Name</th>
+                    <th>Score</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="assignmentList"></tbody>
+        </table>
+
     </div>
 
     <script src="script.js"></script>
